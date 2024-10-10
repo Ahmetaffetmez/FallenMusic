@@ -32,7 +32,7 @@ from youtube_search import YoutubeSearch
 from FallenMusic import BOT_MENTION, BOT_USERNAME, LOGGER, app
 
 
-@app.on_message(filters.command(["song", "vsong", "video", "music"]))
+@app.on_message(filters.command(["song", "vsong","indir", "video", "music"]))
 async def song(_, message: Message):
     try:
         await message.delete()
